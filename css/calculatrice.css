@@ -1,0 +1,258 @@
+@font-face{
+    font-family: MandaloreLaserTitle;
+    src: url("../fonts/mandaloregradital.ttf");
+}
+@font-face{
+    font-family: digital-7;
+    src: url("../css/fonts/digital-7.ttf");
+}
+
+body
+ {
+	background: url(./file.css/tt3.jpg) center fixed;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw; 
+	position: relative;
+}
+ 
+ .calculatrice 
+ {
+	font-size: 30px;
+	height: 100vh;
+	width: 100vw;
+	
+ }
+
+ h1 
+ {
+ 	text-align: center;
+ 	color: #F0FFFF	;
+ 	margin-bottom: 20px;
+ 	font-family: "mandaloreLaserTitle";
+ }
+
+ .machine 
+ {
+ 	padding: 6px;
+ 	margin: 0 auto; 
+ 	background-color: #5F5F5F;
+ 	width: 250px;
+	border-radius: 10px;
+	height: 420px;	
+ }
+
+.ecran
+ {
+ 	display: flex;
+ 	justify-content: flex-end;
+    align-items: flex-end;
+ 	font-family: "digital-7";
+ 	font-size: 22px;
+ 	color: black;
+ 	padding:  11px;
+ 	border-radius: 3px;
+ 	margin-top: 3%;
+ 	height: 40px;
+ 	width: 202px;
+ 	background: linear-gradient(#1bb8d4, #404040);
+ 	position: relative;
+ 	top: 0px; left: 12px;
+ } 
+
+.clavier 
+{
+	padding: 11px;
+}
+
+.touche 
+{
+	font-family: "digital-7";
+	cursor: default;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	padding: 14px;
+	display: inline-block;
+	border-top: 1px solid black;
+	width: 51px;
+	background: linear-gradient(#5F5F5F, #404040);
+	box-shadow: 0 7px 10px rgba(0,0,0,0.8);
+	margin-bottom: 10px;
+	border-radius: 3px;
+	height: 57px;
+}
+
+.touche:hover
+{
+	background: red;	
+}
+.touche:active
+{
+	box-shadow: none;
+}
+
+button[data-key="8"]
+{
+	font-family: "digital-7";
+	cursor: default;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	padding: 14px;
+	display: inline-block;
+	border-top: 1px solid black;
+	width: 51px;
+	background: linear-gradient(#1536cc, #404040);
+	box-shadow: 0 7px 10px rgba(0,0,0,0.8);
+	margin-bottom: 10px;
+	border-radius: 3px;
+	height: 57px;
+}
+button[data-key="8"]:hover
+{
+	background: #FF8C00	;	
+}
+button[data-key="8"]:active
+{
+	box-shadow: none;
+}
+
+button[data-key="13"]
+{
+	font-family: "digital-7";
+	cursor: default;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	padding: 14px;
+	display: inline-block;
+	border-top: -1px solid black;
+	width: 227px;
+	background: linear-gradient(#ba426a, #404040);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.8);
+	margin-bottom: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+button[data-key="13"]:hover
+{
+	background: green;	
+}
+button[data-key="13"]:active
+{
+	box-shadow: none;
+}
+
+#voyager
+{
+	font-size: 150px;
+	position: absolute;
+	top:0;
+	right: 50px;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: all 0.9s;
+}
+
+#voyager:hover
+{
+	filter: grayscale(0);
+	transform: scale(1.2);
+}
+
+#planet
+{
+	font-size: 150px;
+	position: absolute;
+
+	cursor: pointer;
+	top:500px;
+	left: 50px;
+	animation-name: fusion;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes fusion{
+	0%{
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@media (max-device-width:414px) {
+
+	#planet {display:none !important;}
+	#voyager {display:none !important;}
+
+	h1 
+	{
+		font-size: 140px;
+	}
+	
+	.machine{
+	padding: 12px;
+	margin: 0 auto; 
+	width: 500px;
+	border-radius: 20px;
+	height: 840px;
+	}
+
+	.ecran
+ {
+ 	font-size: 44px;
+ 	padding:  22px;
+ 	border-radius: 6px;
+ 	margin-top: 6%;
+ 	height: 80px;
+ 	width: 404px;
+ 	top: 0px; left: 24px;
+ } 
+
+ .clavier 
+{
+	padding: 22px;
+}
+
+.touche 
+{
+
+	font-size: 70px;
+	padding: 28px;
+	border-top: 2px solid black;
+	width: 107px;
+	box-shadow: 0 14px 20px rgba(0,0,0,0.8);
+	margin-bottom: 20px;
+	border-radius: 6px;
+	height: 114px;
+}
+
+button[data-key="8"]
+{
+	font-size: 70px;
+	padding: 28px;
+	border-top: 2px solid black;
+	width: 107px;
+	box-shadow: 0 14px 20px rgba(0,0,0,0.8);
+	margin-bottom: 20px;
+	border-radius: 6px;
+	height: 114px;
+}
+
+button[data-key="13"]
+{
+	
+	font-size: 36px;
+	padding: 28px;
+	border-top: -2px solid black;
+	width: 454px;
+	box-shadow: 0 20px 20px rgba(0,0,0,0.8);
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
+	
+	}
